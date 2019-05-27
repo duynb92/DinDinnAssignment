@@ -1,0 +1,24 @@
+PODS:
+  - Hero (1.4.0)
+  - iCarousel (1.8.3)
+  - ViewAnimator (2.5.1)
+
+DEPENDENCIES:
+  - Hero
+  - iCarousel
+  - ViewAnimator
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Hero
+    - iCarousel
+    - ViewAnimator
+
+SPEC CHECKSUMS:
+  Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
+  iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
+  ViewAnimator: 173932c659a43c5a15c665878750d92801ae2cf1
+
+PODFILE CHECKSUM: cd292fb6ca0ad0421ea5d28e52ca206a78e051da
+
+COCOAPODS: 1.6.1

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IngredientView" customModule="DinDinnAssignment" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="IngredientView" customModule="DinDinnAssignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zKb-XN-n4U" customClass="IngredientCircularView" customModule="DinDinnAssignment" customModuleProvider="target">
+                    <rect key="frame" x="15" y="0.0" width="70" height="70"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cheese" translatesAutoresizingMaskIntoConstraints="NO" id="fW3-PW-Ebx" customClass="RoundUIImageView" customModule="DinDinnAssignment" customModuleProvider="target">
+                            <rect key="frame" x="10" y="10" width="50" height="50"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="fW3-PW-Ebx" secondAttribute="bottom" constant="10" id="Ie1-d5-bHr"/>
+                        <constraint firstAttribute="width" secondItem="zKb-XN-n4U" secondAttribute="height" multiplier="1:1" id="Pxy-o4-1y3"/>
+                        <constraint firstItem="fW3-PW-Ebx" firstAttribute="leading" secondItem="zKb-XN-n4U" secondAttribute="leading" constant="10" id="YPv-jD-fcZ"/>
+                        <constraint firstItem="fW3-PW-Ebx" firstAttribute="top" secondItem="zKb-XN-n4U" secondAttribute="top" constant="10" id="cAe-8X-7yn"/>
+                        <constraint firstAttribute="trailing" secondItem="fW3-PW-Ebx" secondAttribute="trailing" constant="10" id="nst-1u-964"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cheese" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLF-O2-YAz">
+                    <rect key="frame" x="21" y="73" width="58" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zKb-XN-n4U" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Fh0-bN-Tlf"/>
+                <constraint firstItem="PLF-O2-YAz" firstAttribute="top" secondItem="zKb-XN-n4U" secondAttribute="bottom" constant="3" id="YFj-k4-lfH"/>
+                <constraint firstItem="zKb-XN-n4U" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="YQA-6G-Pz1"/>
+                <constraint firstAttribute="trailing" secondItem="zKb-XN-n4U" secondAttribute="trailing" constant="15" id="lqY-Rh-6fr"/>
+                <constraint firstItem="PLF-O2-YAz" firstAttribute="centerX" secondItem="zKb-XN-n4U" secondAttribute="centerX" id="syC-sT-9uS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cheese" width="400" height="400"/>
+    </resources>
+</document>
